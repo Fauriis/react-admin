@@ -133,6 +133,8 @@ const Sidebar = () => {
               Data
             </Typography>
 
+
+
             <Item
               title="Manage Team"
               to="/team"
@@ -140,6 +142,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             ></Item>
+
 
             <Item
               title="Contacts Information"
