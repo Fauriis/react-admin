@@ -19,7 +19,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [theme, colorMode] = useMode();
-  const [isSidebar, setIsSidebar] = useState(true);
+  const [isSidebar, setIsSidebar] = useState(true)
 
   return (
     <ColorModeContext.Provider value={colorMode}>
