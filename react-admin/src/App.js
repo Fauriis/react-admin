@@ -10,16 +10,16 @@ import Contacts from "./scenes/contacts";
 // import Calendar from './scenes/calendar'
 import Bar from "./scenes/bar";
 import Form from "./scenes/form";
-import Line from './scenes/line'
+import Line from "./scenes/line";
 import FAQ from "./scenes/faq";
-import Geography from './scenes/geography'
+import Geography from "./scenes/geography";
 import Pie from "./scenes/pie";
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const [theme, colorMode] = useMode();
-  const [isSidebar, setIsSidebar] = useState(true)
+  const [isSidebar, setIsSidebar] = useState(true);
 
   return (
     <ColorModeContext.Provider value={colorMode}>
@@ -30,7 +30,7 @@ function App() {
           <main className="content">
             <Topbar setIsSidebar={setIsSidebar}></Topbar>
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
@@ -42,7 +42,7 @@ function App() {
               <Route path="/line" element={<Line />} /> 
               <Route path="/geography" element={<Geography />} /> 
 
-              {/* <Route path="/calendar" element={<Calendar />} />
+            {/* <Route path="/calendar" element={<Calendar />} />
             
              */}
             </Routes>

@@ -16,6 +16,7 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import Team from "../team";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -40,6 +41,7 @@ const Sidebar = () => {
   const [selected, setSelected] = useState("Dashboard");
 
   return (
+
     <Box
       sx={{
         "& .pro-sidebar-inner": {
@@ -133,8 +135,6 @@ const Sidebar = () => {
               Data
             </Typography>
 
-
-
             <Item
               title="Manage Team"
               to="/team"
@@ -142,7 +142,6 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             ></Item>
-
 
             <Item
               title="Contacts Information"
